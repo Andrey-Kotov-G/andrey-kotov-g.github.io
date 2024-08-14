@@ -70,16 +70,12 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    margin-right: 25px;
+    margin: 0px 10px 0px 10px;
     transition: color 0.3s ease;
 }
 
 .navbar ul li:hover a {
     color: #ffb742;
-}
-
-.navbar ul li:last-child a {
-    margin: 0;
 }
 
 .write-to-me-btn {
@@ -403,7 +399,6 @@ footer .cols .links-col a:hover {
         gap: 10px;
         margin-left: auto;
         margin-right: auto;
-        min-width: 500px;
     }
 
     .guarantee .item {
@@ -439,6 +434,10 @@ footer .cols .links-col a:hover {
 }
 
 @media screen and (max-width: 780px) {
+    .navbar {
+        justify-content: center;
+    }
+
     .navbar h2 {
         visibility: hidden;
     }
@@ -447,8 +446,8 @@ footer .cols .links-col a:hover {
         position: absolute;
     }
 
-    .navbar ul li a {
-        margin: 0 15px 0 15px;
+    .navbar .write-to-me-btn {
+        visibility: hidden;
     }
 
     .main h4 {
@@ -530,20 +529,21 @@ footer .cols .links-col a:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .main p.title {
-        font-size: 18px;
-    }
-
+@media screen and (max-width: 505px) {
     .main p.subtitle {
         font-size: 10px;
     }
 
-    .guarantee .item .info h3 {
-        font-size: 20px;
+    .guarantee {
+        position: absolute;
+        width: 80%;
+        padding: 0 0 0 0;
+        margin-left: 50px;
+        justify-content: center;
     }
 
-    .guarantee .item .info p {
-        font-size: 12px;
+    .about {
+        position: inherit;
+        margin-top: 10cm;
     }
 }
